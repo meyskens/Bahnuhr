@@ -250,16 +250,16 @@ void hands_draw_second_hand(GContext *ctx, GPoint center, struct tm *t) {
   
   #if PBL_DISPLAY_WIDTH == 260 && PBL_DISPLAY_HEIGHT == 260
     second_hand_length = 120;
-    second_hand_opp_length = 10;
-    second_circle_offset = 35;
+    second_hand_opp_length = 6;
+    second_circle_offset = 45;
   #elif PBL_DISPLAY_WIDTH == 200 && PBL_DISPLAY_HEIGHT == 228
     second_hand_length = 97;
-    second_hand_opp_length = 9;
-    second_circle_offset = 30;
+    second_hand_opp_length = 6;
+    second_circle_offset = 40;
   #elif PBL_DISPLAY_WIDTH == 180 && PBL_DISPLAY_HEIGHT == 180
     second_hand_length = 87;
     second_hand_opp_length = 8;
-    second_circle_offset = 27;
+    second_circle_offset = 37;
   #else
     if (settings_is_round_mode()) {
       second_hand_length = 65;
