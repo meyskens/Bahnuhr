@@ -2,9 +2,9 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 
-// Read the SVG file
-const svgPath = path.join(__dirname, 'sbb.svg');
-const svgBuffer = fs.readFileSync(svgPath);
+// Read the icon file
+const iconPath = path.join(__dirname, '..', 'db-icon.png');
+const iconBuffer = fs.readFileSync(iconPath);
 
 // Pebble Store icons: 80x80 and 144x144
 // Background color: #b21b1b (dark red)
@@ -20,7 +20,7 @@ async function convert() {
   for (const size of sizes) {
     const outputPath = path.join(__dirname, '..', 'resources', 'images', `${size.name}.png`);
 
-    await sharp(svgBuffer)
+    await sharp(iconBuffer)
       .resize(size.width, size.height, { fit: 'contain', background: backgroundColor })
       .flatten({ background: backgroundColor })
       .png()
