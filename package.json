@@ -1,0 +1,142 @@
+{
+  "name": "Bahnuhr",
+  "version": "1.0.0",
+  "description": " Bahnuhr - DB watchface for Pebble",
+  "main": "src/js/app.js",
+  "keywords": [
+    "pebble",
+    "watchface"
+  ],
+  "author": "Maartje Eyskens",
+  "license": "MIT",
+  "dependencies": {
+    "@rebble/clay": "^1.0.10"
+  },
+  "pebble": {
+    "displayName": "Bahnuhr",
+    "uuid": "6ec363bc-87a1-42cc-a2c2-de44eadacb2e",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": {
+      "DialColor": 0,
+      "SecondHandOption": 1,
+      "DateOption": 2,
+      "HourlyVibration": 3,
+      "BluetoothStatusDetection": 4,
+      "RoundBackgroundColor": 5
+    },
+    "resources": {
+      "media": [
+        {
+          "file": "images/bluetooth-disconnect.png",
+          "name": "IMAGE_BLUETOOTHDISCONNECTED",
+          "type": "png"
+        },
+        {
+          "file": "images/bluetooth-connect.png",
+          "name": "IMAGE_BLUETOOTHCONNECTED",
+          "type": "png"
+        },
+        {
+          "file": "images/db-face-round-aplite.png",
+          "name": "IMAGE_DB_FACE_ROUND",
+          "type": "png",
+          "targetPlatforms": ["aplite"]
+        },
+        {
+          "file": "images/db-face-round-color.png",
+          "name": "IMAGE_DB_FACE_ROUND",
+          "type": "png",
+          "targetPlatforms": ["basalt"]
+        },
+        {
+          "file": "images/db-face-round-chalk.png",
+          "name": "IMAGE_DB_FACE_ROUND",
+          "type": "png",
+          "targetPlatforms": ["chalk"]
+        },
+        {
+          "file": "images/db-face-round-diorite.png",
+          "name": "IMAGE_DB_FACE_ROUND",
+          "type": "png",
+          "targetPlatforms": ["diorite"]
+        },
+        {
+          "file": "images/db-face-round-emery.png",
+          "name": "IMAGE_DB_FACE_ROUND",
+          "type": "png",
+          "targetPlatforms": ["emery"]
+        },
+        {
+          "file": "images/db-face-round-flint.png",
+          "name": "IMAGE_DB_FACE_ROUND",
+          "type": "png",
+          "targetPlatforms": ["flint"]
+        },
+        {
+          "file": "images/db-face-round-gabbro.png",
+          "name": "IMAGE_DB_FACE_ROUND",
+          "type": "png",
+          "targetPlatforms": ["gabbro"]
+        },
+        {
+          "file": "images/db-face-logo-round-aplite.png",
+          "name": "IMAGE_DB_FACE_LOGO_ROUND",
+          "type": "png",
+          "targetPlatforms": ["aplite"]
+        },
+        {
+          "file": "images/db-face-logo-round-color.png",
+          "name": "IMAGE_DB_FACE_LOGO_ROUND",
+          "type": "png",
+          "targetPlatforms": ["basalt"]
+        },
+        {
+          "file": "images/db-face-logo-round-chalk.png",
+          "name": "IMAGE_DB_FACE_LOGO_ROUND",
+          "type": "png",
+          "targetPlatforms": ["chalk"]
+        },
+        {
+          "file": "images/db-face-logo-round-diorite.png",
+          "name": "IMAGE_DB_FACE_LOGO_ROUND",
+          "type": "png",
+          "targetPlatforms": ["diorite"]
+        },
+        {
+          "file": "images/db-face-logo-round-emery.png",
+          "name": "IMAGE_DB_FACE_LOGO_ROUND",
+          "type": "png",
+          "targetPlatforms": ["emery"]
+        },
+        {
+          "file": "images/db-face-logo-round-flint.png",
+          "name": "IMAGE_DB_FACE_LOGO_ROUND",
+          "type": "png",
+          "targetPlatforms": ["flint"]
+        },
+        {
+          "file": "images/db-face-logo-round-gabbro.png",
+          "name": "IMAGE_DB_FACE_LOGO_ROUND",
+          "type": "png",
+          "targetPlatforms": ["gabbro"]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}
